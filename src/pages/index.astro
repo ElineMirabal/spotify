@@ -1,5 +1,7 @@
 ---
-
+import"../styles/global.css";
+import Cards from"../components/Cards.astro";
+import Section from "../components/Section.astro";
 ---
 
 <html lang="en">
@@ -12,6 +14,50 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+
+		<h1>Spotify</h1>
+		<Section title="Artists" link="/artists" >
+	<Cards 
+	title="Black eyed peas" 
+	img="https://via.assets.so/album.png?id=9&q=95&w=360&h=360&fit=fill"
+	shape="round"/>
+	
+	<Cards 
+	title="Billede 2"
+	img="https://via.assets.so/album.png?id=4&q=95&w=360&h=360&fit=fill"
+	shape="round"/>
+	<Cards 
+	title="Billede 3"
+	img="https://via.assets.so/album.png?id=6&q=95&w=360&h=360&fit=fill"
+	shape="round"/>
+	<Cards 
+	title="Billede 4"
+	img="https://via.assets.so/album.png?id=8&q=95&w=360&h=360&fit=fill"
+	shape="round"/>
+	<Cards 
+	title="Billede 5"
+	img="https://via.assets.so/album.png?id=2&q=95&w=360&h=360&fit=fill"
+	shape="round"/>
+</Section>
+<Section title="Albums" link="/albums" >
+	<Cards 
+	title="Black eyed peas" 
+	img="https://via.assets.so/album.png?id=9&q=95&w=360&h=360&fit=fill"
+	/>
+	<Cards 
+	title="Billede 2"
+	img="https://via.assets.so/album.png?id=4&q=95&w=360&h=360&fit=fill"
+	explicit={true}/>
+	<Cards 
+	title="Billede 3"
+	img="https://via.assets.so/album.png?id=6&q=95&w=360&h=360&fit=fill"
+	explicit/>
+	<Cards 
+	title="Billede 4"
+	img="https://via.assets.so/album.png?id=8&q=95&w=360&h=360&fit=fill"/>
+	<Cards 
+	title="Billede 5"
+	img="https://via.assets.so/album.png?id=2&q=95&w=360&h=360&fit=fill"/>
+</Section>
 	</body>
 </html>

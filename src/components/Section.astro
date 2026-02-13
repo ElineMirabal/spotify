@@ -1,0 +1,32 @@
+---
+const{title, link } =Astro.props;
+---
+
+<section class="section">
+    <header>
+<h2 class="section_title">{title}</h2>
+<a href={link}>Vis alle</a>
+</header>
+<div class="section_content">
+
+    <slot />
+</div>
+</section>
+
+
+<style>
+header{
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section_content{
+    display: grid;
+    grid-auto-columns: 300px;
+    grid-auto-flow: column;
+    gap: 2rem;
+    overflow-x: auto;
+}
+
+</style>
